@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <script src="../js/three.min.js"></script>
+    <script src="../js/OrbitControls.js"></script>
+    <script src="../js/stats.min.js"></script>
+    <script src="../js/Lut.js"></script>
+    <!-- <script src="../js/Vector3.js"></script> -->
+    <script src="../js/ConvexHull.js"></script>
+    <script src="../js/ConvexGeometry.js"></script>
+    <script src="../js/Geometry.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        #stats div {
+            top: 0 !important;
+            right: 0 !important;
+            left: auto !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <label for="inline_idx" class="form-label">Inline number</label>
+                <input type="range" class="form-range" id="inline_idx">
+                <label for="crossline_idx" class="form-label">Crossline number</label>
+                <input type="range" class="form-range" id="crossline_idx">
+                <label for="timeslice_idx" class="form-label">Timeslice</label>
+                <input type="range" class="form-range" id="timeslice_idx">
+            </div>
+            <div class="col-10">
+                <div id="render">
+                    <div id="stats"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <script src="kerry_response.js"></script> -->
+    <script src="mesh_demo.js"></script>
+    <!-- <script src="image_demo.js"></script> -->
+</body>
+
+</html>
